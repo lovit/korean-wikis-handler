@@ -4,6 +4,7 @@ __pychache__/
 
 # Jupyter
 .ipynb_checkpoints/
+*dev*
 
 # MacOS
 .DS_Store
