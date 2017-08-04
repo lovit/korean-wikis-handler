@@ -1,0 +1,12 @@
+# Python
+*.pyc
+__pychache__/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# MacOS
+.DS_Store
+
+# Data
+data/
