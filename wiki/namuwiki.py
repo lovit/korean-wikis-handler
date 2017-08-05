@@ -48,7 +48,9 @@ def to_graph(namuwiki, verbose=True):
         
         links = get_links(entity.get('text', ''))
         if links:
-            graph[title] = links
+            linked_entities = graph.get(title, set())
+            linked_entities.update(links)
+            graph[title] = linked_entities
     if verbose:
         sys.stdout.write('\ndone')
     return graph
